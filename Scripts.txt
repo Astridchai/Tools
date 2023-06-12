@@ -1,0 +1,8 @@
+Connect-PnPOnline -Url https://standardcharteredbank.sharepoint.com/sites/credit_origination_technology -Interactive
+ 
+#Please change below path as your condition
+$localpath = "C:\Temp\DispForm.aspx"  
+ 
+$splib = "PE HIVE/Forms"  
+ 
+Add-PnPFile -Path $localPath -Folder $splib 
